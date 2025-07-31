@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void AddBallShot(int amount)
     {
-        ballsShot -= amount;
+        ballsShot += amount;
     }
 
     public void UpdateTargets(int amount)
@@ -67,6 +67,8 @@ public class GameManager : MonoBehaviour
         {
             g.SetActive(true);
         }
+
+        targetsHit = 0;
     }
 
     private void Update()
